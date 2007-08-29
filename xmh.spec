@@ -42,6 +42,6 @@ fi
 %{_datadir}/X11/app-defaults/Xmh
 %{_includedir}/X11/bitmaps/box6
 %{_includedir}/X11/bitmaps/black6
-%{_mandir}/man1/xmh.1x.bz2
+%{_mandir}/man1/xmh.1x*
 
 
