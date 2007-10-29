@@ -1,6 +1,6 @@
 Name:		xmh
 Version:	1.0.1
-Release:	%mkrel 5
+Release:	%mkrel 6
 Summary:	Send and read mail with an X interface to MH
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -19,6 +19,7 @@ Handling System.
 %setup -q -n %{name}-%{version}
 
 %build
+autoreconf -ifs
 %configure2_5x	--x-includes=%{_includedir} \
 		--x-libraries=%{_libdir}
 
