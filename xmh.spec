@@ -5,7 +5,6 @@ Summary:	Send and read mail with an X interface to MH
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 
 BuildRequires:	libxt-devel >= 1.0.0
 BuildRequires:	libxaw-devel >= 1.0.1
