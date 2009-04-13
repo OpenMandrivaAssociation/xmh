@@ -4,6 +4,7 @@ Release:	%mkrel 7
 Summary:	Send and read mail with an X interface to MH
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Patch0:		xmh-1.0.1-fix-str-fmt.patch
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
@@ -17,12 +18,10 @@ Handling System.
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch0 -p0
 
 %build
-autoreconf -ifs
-%configure2_5x	--x-includes=%{_includedir} \
-		--x-libraries=%{_libdir}
-
+%configure2_5x
 %make
 
 %install
