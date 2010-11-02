@@ -11,6 +11,7 @@ BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: libxaw-devel >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: x11-data-bitmaps
 
 %description
 The xmh program provides a graphical user interface to the MH Message
