@@ -41,6 +41,4 @@ fi
 %defattr(-,root,root)
 %{_bindir}/xmh
 %{_datadir}/X11/app-defaults/Xmh
-%{_includedir}/X11/bitmaps/box6
-%{_includedir}/X11/bitmaps/black6
 %{_mandir}/man1/xmh.1*
