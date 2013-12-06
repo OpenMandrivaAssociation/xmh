@@ -1,6 +1,6 @@
 Name:		xmh
 Version:	1.0.2
-Release:	5
+Release:	6
 Summary:	Send and read mail with an X interface to MH
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
