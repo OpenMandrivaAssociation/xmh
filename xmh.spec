@@ -1,15 +1,14 @@
 Name:		xmh
 Version:	1.0.2
-Release:	8
+Release:	9
 Summary:	Send and read mail with an X interface to MH
 Group:		Development/X11
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 Patch0:		xmh-1.0.1-fix-str-fmt.patch
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires: libxt-devel >= 1.0.0
-BuildRequires: libxaw-devel >= 1.0.1
+BuildRequires: pkgconfig(xt) >= 1.0.0
+BuildRequires: pkgconfig(xaw7) >= 1.0.1
 BuildRequires: x11-util-macros >= 1.0.1
 BuildRequires: x11-data-bitmaps
 
