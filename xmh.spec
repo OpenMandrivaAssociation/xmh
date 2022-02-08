@@ -10,19 +10,18 @@ License:	MIT
 BuildRequires:	pkgconfig(xt) >= 1.0.0
 BuildRequires:	pkgconfig(xaw7) >= 1.0.1
 BuildRequires:	x11-util-macros >= 1.0.1
-BuildRequires:	x11-data-bitmaps
+BuildRequires:	pkgconfig(xbitmaps)
 
 %description
 The xmh program provides a graphical user interface to the MH Message
 Handling System.
 
 %prep
-%setup -q -n %{name}-%{version}
-%patch0 -p0
+%autosetup -p0 -n %{name}-%{version}
 
 %build
 %configure
-%make
+%make_build
 
 %install
 %makeinstall_std
